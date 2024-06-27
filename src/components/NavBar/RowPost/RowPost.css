@@ -1,0 +1,63 @@
+.row{
+    margin-left: 20px;
+    color:aliceblue;
+    margin-top: 20px;
+}
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  
+
+}
+
+.poster-container {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.posters::-webkit-scrollbar{
+    display: none;
+}
+.smallPoster{
+    max-height: 150px;
+    cursor:pointer;
+}
+.smallPoster:hover{
+    transform: scale(1.2);
+    transition: transform 0.4s;
+}
+.poster:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+.movie-name-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+
+  }
+
+  .movie-name {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+
+
+  }
+
+  .youtube-container {
+    margin-top: 20px;
+  }
